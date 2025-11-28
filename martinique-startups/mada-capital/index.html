@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mada Capital | Premier Hedge Fund Caribéen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">MADA<span class="highlight">CAPITAL</span></div>
+        <div class="nav-links">
+            <a href="#philosophy" data-i18n="nav.philosophy">Philosophie</a>
+            <a href="#performance" data-i18n="nav.performance">Performance</a>
+            <a href="#team" data-i18n="nav.team">Équipe</a>
+            <a href="#contact" class="cta-small" data-i18n="nav.contact">Investir</a>
+            <button id="lang-toggle" class="lang-btn">EN</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="hero.title">L'Excellence Financière<br>au Cœur des Caraïbes</h1>
+            <p data-i18n="hero.subtitle">Une stratégie d'investissement algorithmique unique, connectant les marchés
+                mondiaux à la dynamique locale.</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="18.5">0</span>%
+                    <span class="stat-label" data-i18n="stats.roi">Rendement Annuel</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="125">0</span>M€
+                    <span class="stat-label" data-i18n="stats.aum">Actifs sous Gestion</span>
+                </div>
+            </div>
+            <a href="#contact" class="cta-main" data-i18n="hero.cta">Découvrir nos Fonds</a>
+        </div>
+        <div class="hero-visual">
+            <div class="chart-container">
+                <!-- Abstract Chart Visualization -->
+                <svg viewBox="0 0 200 100" class="chart-svg">
+                    <path d="M0,100 Q50,50 100,80 T200,20" fill="none" stroke="#D4AF37" stroke-width="2"
+                        class="chart-line" />
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:rgba(212, 175, 55, 0.2);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:rgba(212, 175, 55, 0);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M0,100 Q50,50 100,80 T200,20 V100 H0 Z" fill="url(#grad1)" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <section id="philosophy" class="section-dark">
+        <div class="container">
+            <h2 data-i18n="philosophy.title">Notre Philosophie</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="icon">📊</div>
+                    <h3 data-i18n="philosophy.card1.title">Data-Driven</h3>
+                    <p data-i18n="philosophy.card1.desc">Nos décisions sont basées sur l'analyse de millions de points
+                        de données, éliminant le biais émotionnel.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🌍</div>
+                    <h3 data-i18n="philosophy.card2.title">Impact Local</h3>
+                    <p data-i18n="philosophy.card2.desc">Nous réinvestissons une partie de nos profits dans l'écosystème
+                        technologique martiniquais.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🛡️</div>
+                    <h3 data-i18n="philosophy.card3.title">Gestion des Risques</h3>
+                    <p data-i18n="philosophy.card3.desc">Une protection du capital rigoureuse grâce à nos algorithmes de
+                        couverture propriétaires.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-gold">
+        <div class="container contact-container">
+            <h2 data-i18n="contact.title">Rejoignez l'Élite</h2>
+            <p data-i18n="contact.desc">L'accès à nos fonds est réservé aux investisseurs qualifiés. Contactez-nous pour
+                recevoir notre prospectus.</p>
+            <form class="contact-form">
+                <input type="email" placeholder="Email professionnel" required>
+                <button type="submit" data-i18n="contact.btn">Demander l'Accès</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">MADA<span class="highlight">CAPITAL</span></div>
+            <p class="copyright">© 2025 Mada Capital. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
